@@ -2,16 +2,33 @@
 <html>
 <head>  
       <title> test to run javascript file </title>
-      <body onload = "rectangle()">
+      <style>
+                        button { 
+                      font-size: 1.1em;
+                      background-color: #EBF5FF;
+                      color: #4312AE;
+                      border: 2px solid black;
+                      box-shadow: 4px 4px 4px #999999;
+                                   }
+                    button:hover, button:focus, button:active { 
+                      /* swap colors */
+                      color: #EBF5FF;
+                      background-color: #4312AE;
+                      cursor: pointer; /* displays a hand */
+                    }
+      </style>
+      
+      
       <script>
-            function rectangle()
+            function myrectangle()
             {
-      fill("blue");            
-      rect(300, 500, 1000, 2000);   
+            fill("blue");            
+            rect(300, 500, 1000, 2000);   
             }
       </script>
 </head>
 <body>
       <h1>This is a Rectangle</h1>
+      <button onclick="myrectangle()">Rectangle</button> 
  </body>
  </html>
